@@ -1,0 +1,15 @@
+.contain-login
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/bg.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contain-login-contents
+{
+    background-color: rgba(0, 0, 0, 0.367);
+}

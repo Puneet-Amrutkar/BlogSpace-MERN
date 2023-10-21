@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap');
+
+.mega-container
+{
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+.main-text
+{
+    font-family: 'Nosifer', 'Roboto';
+    color: white;
+    font-size: 400%;
+}
+
+.sub-text
+{
+    font-family: 'Belanosima';
+    color: rgba(255, 166, 0, 0.835);
+    font-size: 250%;
+}
+
+span
+{
+    color: orange;
+}
