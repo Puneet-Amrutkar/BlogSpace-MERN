@@ -13,6 +13,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/my-blogs" element={<UserBlogs />} />
         <Route path="/create-blog" element={<CreateBlog />} />
         <Route path="/blog-details/:id" element={<BlogDetails />} />

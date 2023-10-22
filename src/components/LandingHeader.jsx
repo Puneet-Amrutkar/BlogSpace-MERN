@@ -47,11 +47,11 @@ const Header = () => {
     <AppBar position="sticky" style={{ background: 'transparent', boxShadow: 'none'}}>
         <Toolbar className='navbar'>
             {/* <Typography variant="h4">BlogIT</Typography> */}
-            <Image src={imageURL} alt="login" />
+            <Image LinkComponent={Link} to="/" src={imageURL} alt="login" />
             {isLogin && (
               <Box display={"flex"} marginLeft={"auto"}>
                 <Tabs textColor="inherit" value={value} onChange={(e, val) => setValue(val)}>
-                  {/* <Tab sx={{color:'orange'}}label="Blogs" LinkComponent={Link} to="/" /> */}
+                  <Tab sx={{color:'orange'}}label="Blogs" LinkComponent={Link} to="/blogs" />
                   <Tab sx={{color:'orange'}}label="My Blogs" LinkComponent={Link} to="/my-blogs" />
                   <Tab
                   label="Create Blog"

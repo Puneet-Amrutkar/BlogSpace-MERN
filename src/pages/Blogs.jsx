@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import BlogCard from '../components/BlogCard';
 import { Box, styled } from "@mui/material";
+import Header from '../components/Header'
 import moment from 'moment';
 
 const Container = styled(Box)`
@@ -33,7 +34,9 @@ const Blogs = () => {
   }, []);
 
   return (
-    <Container>
+    <>
+      <Header />
+      <Container>
       {blogs &&
         blogs.map((blog) => (
           <BlogCard
@@ -46,8 +49,10 @@ const Blogs = () => {
             time={(blog.createdAt)}
           />
         ))}
-      {/* <BlogCard /> */}
-    </Container>
+        {/* <BlogCard /> */}
+      </Container>
+    </>
+    
   )
 }
 

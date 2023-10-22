@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import BlogCard from "../components/BlogCard";
 import { Box, styled } from "@mui/material";
+import Header from "../components/Header"
 
 const Container = styled(Box)`
   margin-top: 20px;
@@ -31,6 +32,8 @@ const UserBlogs = () => {
   }, []);
   console.log(blogs);
   return (
+    <>
+    <Header />
     <Container>
       {blogs && blogs.length > 0 ? (
         blogs.map((blog) => (
@@ -48,6 +51,7 @@ const UserBlogs = () => {
         <h1>You Havent Created a blog</h1>
       )}
     </Container>
+    </>
   );
 };
 

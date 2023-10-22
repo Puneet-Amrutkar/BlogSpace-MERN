@@ -5,7 +5,7 @@
 {
     background-image: url(../assets/bg.png);
     background-size: cover;
-    height: 90vh;
+    /* background-color: #BC382E; */
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +14,9 @@
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-top: 200px;
+    height: 100vh;
     margin: auto;
     text-align: center;
     /* border: 1px solid white; */
@@ -22,6 +24,7 @@
 
 .main-text
 {
+    text-shadow: rgb(0, 0, 0) 20px 20px 20px;
     font-family: 'Nosifer', 'Roboto';
     color: white;
     font-size: 400%;
@@ -37,4 +40,86 @@
 span
 {
     color: orange;
+}
+
+.memory-contain
+{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.memory-text
+{
+    height: 80vh;
+    width: 60%;
+    background-color: #D57301;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#major-text
+{
+    text-shadow: rgba(226, 128, 0, 0.816) 3px 3px 3px;
+    margin-left: auto;
+    font-family: 'Belanosima';
+    font-size: 400%;
+}
+
+#minor-text
+{
+    margin-left: 100px;
+    font-family: 'Belanosima';
+    font-size: 120%;
+}
+
+.memory-image
+{
+    width: 40%;
+    background-image: url(../assets/memories.png);
+    background-size: cover;
+}
+
+.world-contain
+{
+    background-image: url("../assets/world.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.world-sub-contain
+{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-world-text
+{
+    font-size: 230%;
+    color: #ea8007;
+    font-family: 'Nosifer', 'Roboto';
+}
+
+.minor-world-text
+{
+    font-size: 100%;
+    color: white;
+    font-weight: semi-bold;
+    font-family: 'Belanosima';
+}
+
+.button
+{
+    font-family: 'Belanosima';
+    width: 20%;
 }
